@@ -1,0 +1,277 @@
+id,Name,Height,Weight,HP,Attack,Defense,Sp.Atk,Sp.Def,Speed,Type1,Type2,Regional_Variant,Is_Mega,Is_Gmax,Form
+10013,Castform,3,8,70,70,70,70,70,70,Fire,,,No,No,Sunny
+10014,Castform,3,8,70,70,70,70,70,70,Water,,,No,No,Rainy
+10015,Castform,3,8,70,70,70,70,70,70,Ice,,,No,No,Snowy
+10001,Deoxys,17,608,50,180,20,180,20,150,Psychic,,,No,No,Attack
+10002,Deoxys,17,608,50,70,160,70,160,90,Psychic,,,No,No,Defense
+10003,Deoxys,17,608,50,95,90,95,90,180,Psychic,,,No,No,Speed
+10004,Wormadam,5,65,60,79,105,59,85,36,Bug,Ground,,No,No,Sandy
+10005,Wormadam,5,65,60,69,95,69,95,36,Bug,Steel,,No,No,Trash
+10008,Rotom,3,3,50,65,107,105,107,86,Electric,Fire,,No,No,Heat
+10009,Rotom,3,3,50,65,107,105,107,86,Electric,Water,,No,No,Wash
+10010,Rotom,3,3,50,65,107,105,107,86,Electric,Ice,,No,No,Frost
+10011,Rotom,3,3,50,65,107,105,107,86,Electric,Flying,,No,No,Fan
+10012,Rotom,3,3,50,65,107,105,107,86,Electric,Grass,,No,No,Mow
+10007,Giratina,69,6500,150,120,100,120,100,90,Ghost,Dragon,,No,No,Origin
+10006,Shaymin,4,52,100,103,75,120,75,127,Grass,Flying,,No,No,Sky
+10016,Basculin,10,180,70,92,65,80,55,98,Water,,,No,No,Blue striped
+10017,Darmanitan,13,929,105,30,105,140,105,55,Fire,Psychic,,No,No,Zen
+10018,Meloetta,6,65,100,128,90,77,77,128,Normal,Fighting,,No,No,Pirouette
+10019,Tornadus,14,630,79,100,80,110,90,121,Flying,,,No,No,Therian
+10020,Thundurus,30,610,79,105,70,145,80,101,Electric,Flying,,No,No,Therian
+10021,Landorus,13,680,89,145,90,105,80,91,Ground,Flying,,No,No,Therian
+10022,Kyurem,33,3250,125,170,100,120,90,95,Dragon,Ice,,No,No,Black
+10023,Kyurem,36,3250,125,120,90,170,100,95,Dragon,Ice,,No,No,White
+10024,Keldeo,14,485,91,72,90,129,90,108,Water,Fighting,,No,No,Resolute
+10025,Meowstic,6,85,74,48,76,83,81,104,Psychic,,,No,No,Female
+10026,Aegislash,17,530,60,140,50,140,50,60,Steel,Ghost,,No,No,Blade
+10027,Pumpkaboo,3,35,44,66,70,44,55,56,Ghost,Grass,,No,No,Small
+10028,Pumpkaboo,5,75,54,66,70,44,55,46,Ghost,Grass,,No,No,Large
+10029,Pumpkaboo,8,150,59,66,70,44,55,41,Ghost,Grass,,No,No,Super
+10030,Gourgeist,7,95,55,85,122,58,75,99,Ghost,Grass,,No,No,Small
+10031,Gourgeist,11,140,75,95,122,58,75,69,Ghost,Grass,,No,No,Large
+10032,Gourgeist,17,390,85,100,122,58,75,54,Ghost,Grass,,No,No,Super
+10033,Mega Venusaur,24,1555,80,100,123,122,120,80,Grass,Poison,,Yes,No,
+10034,Mega Charizard X,17,1105,78,130,111,130,85,100,Fire,Dragon,,Yes,No,
+10035,Mega Charizard Y,17,1005,78,104,78,159,115,100,Fire,Flying,,Yes,No,
+10036,Mega Blastoise,16,1011,79,103,120,135,115,78,Water,,,Yes,No,
+10037,Mega Alakazam,12,480,55,50,65,175,105,150,Psychic,,,Yes,No,
+10038,Mega Gengar,14,405,60,65,80,170,95,130,Ghost,Poison,,Yes,No,
+10039,Mega Kangaskhan,22,1000,105,125,100,60,100,100,Normal,,,Yes,No,
+10040,Mega Pinsir,17,590,65,155,120,65,90,105,Bug,Flying,,Yes,No,
+10041,Mega Gyarados,65,3050,95,155,109,70,130,81,Water,Dark,,Yes,No,
+10042,Mega Aerodactyl,21,790,80,135,85,70,95,150,Rock,Flying,,Yes,No,
+10043,Mega Mewtwo X,23,1270,106,190,100,154,100,130,Psychic,Fighting,,Yes,No,
+10044,Mega Mewtwo Y,15,330,106,150,70,194,120,140,Psychic,,,Yes,No,
+10045,Mega Ampharos,14,615,90,95,105,165,110,45,Electric,Dragon,,Yes,No,
+10046,Mega Scizor,20,1250,70,150,140,65,100,75,Bug,Steel,,Yes,No,
+10047,Mega Heracross,17,625,80,185,115,40,105,75,Bug,Fighting,,Yes,No,
+10048,Mega Houndoom,19,495,75,90,90,140,90,115,Dark,Fire,,Yes,No,
+10049,Mega Tyranitar,25,2550,100,164,150,95,120,71,Rock,Dark,,Yes,No,
+10050,Mega Blaziken,19,520,80,160,80,130,80,100,Fire,Fighting,,Yes,No,
+10051,Mega Gardevoir,16,484,68,85,65,165,135,100,Psychic,Fairy,,Yes,No,
+10052,Mega Mawile,10,235,50,105,125,55,95,50,Steel,Fairy,,Yes,No,
+10053,Mega Aggron,22,3950,70,140,230,60,80,50,Steel,,,Yes,No,
+10054,Mega Medicham,13,315,60,100,85,80,85,100,Fighting,Psychic,,Yes,No,
+10055,Mega Manectric,18,440,70,75,80,135,80,135,Electric,,,Yes,No,
+10056,Mega Banette,12,130,64,165,75,93,83,75,Ghost,,,Yes,No,
+10057,Mega Absol,12,490,65,150,60,115,60,115,Dark,,,Yes,No,
+10058,Mega Garchomp,19,950,108,170,115,120,95,92,Dragon,Ground,,Yes,No,
+10059,Mega Lucario,13,575,70,145,88,140,70,112,Fighting,Steel,,Yes,No,
+10060,Mega Abomasnow,27,1850,90,132,105,132,105,30,Grass,Ice,,Yes,No,
+10061,Floette,2,9,74,65,67,125,128,92,Fairy,,,No,No,Eternal
+10062,Mega Latias,18,520,80,100,120,140,150,110,Dragon,Psychic,,Yes,No,
+10063,Mega Latios,23,700,80,130,100,160,120,110,Dragon,Psychic,,Yes,No,
+10064,Mega Swampert,19,1020,100,150,110,95,110,70,Water,Ground,,Yes,No,
+10065,Mega Sceptile,19,552,70,110,75,145,85,145,Grass,Dragon,,Yes,No,
+10066,Mega Sableye,5,1610,50,85,125,85,115,20,Dark,Ghost,,Yes,No,
+10067,Mega Altaria,15,206,75,110,110,110,105,80,Dragon,Fairy,,Yes,No,
+10068,Mega Gallade,16,564,68,165,95,65,115,110,Psychic,Fighting,,Yes,No,
+10069,Mega Audino,15,320,103,60,126,80,126,50,Normal,Fairy,,Yes,No,
+10070,Mega Sharpedo,25,1303,70,140,70,110,65,105,Water,Dark,,Yes,No,
+10071,Mega Slowbro,20,1200,95,75,180,130,80,30,Water,Psychic,,Yes,No,
+10072,Mega Steelix,105,7400,75,125,230,55,95,30,Steel,Ground,,Yes,No,
+10073,Mega Pidgeot,22,505,83,80,80,135,80,121,Normal,Flying,,Yes,No,
+10074,Mega Glalie,21,3502,80,120,80,120,80,100,Ice,,,Yes,No,
+10075,Mega Diancie,11,278,50,160,110,160,110,110,Rock,Fairy,,Yes,No,
+10076,Mega Metagross,25,9429,80,145,150,105,110,110,Steel,Psychic,,Yes,No,
+10077,Kyogre,98,4300,100,150,90,180,160,90,Water,,,No,No,Primal
+10078,Groudon,50,9997,100,180,160,150,90,90,Ground,Fire,,No,No,Primal
+10079,Mega Rayquaza,108,3920,105,180,100,180,100,115,Dragon,Flying,,Yes,No,
+10080,Pikachu,4,60,35,55,40,50,50,90,Electric,,,No,No,Rock star
+10081,Pikachu,4,60,35,55,40,50,50,90,Electric,,,No,No,Belle
+10082,Pikachu,4,60,35,55,40,50,50,90,Electric,,,No,No,Pop star
+10083,Pikachu,4,60,35,55,40,50,50,90,Electric,,,No,No,Phd
+10084,Pikachu,4,60,35,55,40,50,50,90,Electric,,,No,No,Libre
+10085,Pikachu,4,60,35,55,40,50,50,90,Electric,,,No,No,Cosplay
+10086,Hoopa,65,4900,80,160,60,170,130,80,Psychic,Dark,,No,No,Unbound
+10087,Mega Camerupt,25,3205,70,120,100,145,105,20,Fire,Ground,,Yes,No,
+10088,Mega Lopunny,13,283,65,136,94,54,96,135,Normal,Fighting,,Yes,No,
+10089,Mega Salamence,18,1126,95,145,130,120,90,120,Dragon,Flying,,Yes,No,
+10090,Mega Beedrill,14,405,65,150,40,15,80,145,Bug,Poison,,Yes,No,
+10091,Rattata,3,38,30,56,35,25,35,72,Dark,Normal,Alolan,No,No,
+10092,Raticate,7,255,75,71,70,40,80,77,Dark,Normal,Alolan,No,No,
+10093,Raticate,14,1050,75,71,70,40,80,77,Dark,Normal,Alolan,No,No,Totem
+10094,Pikachu,4,60,35,55,40,50,50,90,Electric,,,No,No,Original cap
+10095,Pikachu,4,60,35,55,40,50,50,90,Electric,,,No,No,Hoenn cap
+10096,Pikachu,4,60,35,55,40,50,50,90,Electric,,,No,No,Sinnoh cap
+10097,Pikachu,4,60,35,55,40,50,50,90,Electric,,,No,No,Unova cap
+10098,Pikachu,4,60,35,55,40,50,50,90,Electric,,,No,No,Kalos cap
+10099,Pikachu,4,60,35,55,40,50,50,90,Electric,,,No,No,Alola cap
+10100,Raichu,7,210,60,85,50,95,85,110,Electric,Psychic,Alolan,No,No,
+10101,Sandshrew,7,400,50,75,90,10,35,40,Ice,Steel,Alolan,No,No,
+10102,Sandslash,12,550,75,100,120,25,65,65,Ice,Steel,Alolan,No,No,
+10103,Vulpix,6,99,38,41,40,50,65,65,Ice,,Alolan,No,No,
+10104,Ninetales,11,199,73,67,75,81,100,109,Ice,Fairy,Alolan,No,No,
+10105,Diglett,2,10,10,55,30,35,45,90,Ground,Steel,Alolan,No,No,
+10106,Dugtrio,7,666,35,100,60,50,70,110,Ground,Steel,Alolan,No,No,
+10107,Meowth,4,42,40,35,35,50,40,90,Dark,,Alolan,No,No,
+10108,Persian,11,330,65,60,60,75,65,115,Dark,,Alolan,No,No,
+10109,Geodude,4,203,40,80,100,30,30,20,Rock,Electric,Alolan,No,No,
+10110,Graveler,10,1100,55,95,115,45,45,35,Rock,Electric,Alolan,No,No,
+10111,Golem,17,3160,80,120,130,55,65,45,Rock,Electric,Alolan,No,No,
+10112,Grimer,7,420,80,80,50,40,50,25,Poison,Dark,Alolan,No,No,
+10113,Muk,10,520,105,105,75,65,100,50,Poison,Dark,Alolan,No,No,
+10114,Exeggutor,109,4156,95,105,85,125,75,45,Grass,Dragon,Alolan,No,No,
+10115,Marowak,10,340,60,80,110,50,80,45,Fire,Ghost,Alolan,No,No,
+10116,Greninja,15,400,72,95,67,103,71,122,Water,Dark,,No,No,Battle bond
+10117,Greninja,15,400,72,145,67,153,71,132,Water,Dark,,No,No,Ash
+10118,Zygarde,12,335,54,100,71,61,85,115,Dragon,Ground,,No,No,10 power construct
+10119,Zygarde,50,3050,108,100,121,81,95,95,Dragon,Ground,,No,No,50 power construct
+10120,Zygarde,45,6100,216,100,121,91,95,85,Dragon,Ground,,No,No,Complete
+10121,Gumshoos,14,600,88,110,60,55,60,45,Normal,,,No,No,Totem
+10122,Vikavolt,26,1475,77,70,90,145,75,43,Bug,Electric,,No,No,Totem
+10123,Oricorio,6,34,75,70,70,98,70,93,Electric,Flying,,No,No,Pom pom
+10124,Oricorio,6,34,75,70,70,98,70,93,Psychic,Flying,,No,No,Pau
+10125,Oricorio,6,34,75,70,70,98,70,93,Ghost,Flying,,No,No,Sensu
+10126,Lycanroc,11,250,85,115,75,55,75,82,Rock,,,No,No,Midnight
+10127,Wishiwashi,82,786,45,140,130,140,135,30,Water,,,No,No,School
+10128,Lurantis,15,580,70,105,90,80,90,45,Grass,,,No,No,Totem
+10129,Salazzle,21,810,68,64,60,111,60,117,Poison,Fire,,No,No,Totem
+10130,Minior,3,400,60,60,100,60,100,60,Rock,Flying,,No,No,Orange meteor
+10131,Minior,3,400,60,60,100,60,100,60,Rock,Flying,,No,No,Yellow meteor
+10132,Minior,3,400,60,60,100,60,100,60,Rock,Flying,,No,No,Green meteor
+10133,Minior,3,400,60,60,100,60,100,60,Rock,Flying,,No,No,Blue meteor
+10134,Minior,3,400,60,60,100,60,100,60,Rock,Flying,,No,No,Indigo meteor
+10135,Minior,3,400,60,60,100,60,100,60,Rock,Flying,,No,No,Violet meteor
+10137,Minior,3,3,60,100,60,100,60,120,Rock,Flying,,No,No,Orange
+10138,Minior,3,3,60,100,60,100,60,120,Rock,Flying,,No,No,Yellow
+10139,Minior,3,3,60,100,60,100,60,120,Rock,Flying,,No,No,Green
+10140,Minior,3,3,60,100,60,100,60,120,Rock,Flying,,No,No,Blue
+10141,Minior,3,3,60,100,60,100,60,120,Rock,Flying,,No,No,Indigo
+10142,Minior,3,3,60,100,60,100,60,120,Rock,Flying,,No,No,Violet
+10143,Mimikyu,2,7,55,90,80,50,105,96,Ghost,Fairy,,No,No,Busted
+10144,Mimikyu,4,28,55,90,80,50,105,96,Ghost,Fairy,,No,No,Totem disguised
+10145,Mimikyu,4,28,55,90,80,50,105,96,Ghost,Fairy,,No,No,Totem busted
+10146,Kommo,24,2075,75,110,125,100,105,85,Dragon,Fighting,,No,No,O totem
+10147,Magearna,10,805,80,95,115,130,115,65,Steel,Fairy,,No,No,Original
+10148,Pikachu,4,60,35,55,40,50,50,90,Electric,,,No,No,Partner cap
+10149,Marowak,17,980,60,80,110,50,80,45,Fire,Ghost,,No,No,Totem
+10150,Ribombee,4,20,60,55,60,95,70,124,Bug,Fairy,,No,No,Totem
+10151,Rockruff,5,92,45,65,40,30,40,60,Rock,,,No,No,Own tempo
+10152,Lycanroc,8,250,75,117,65,55,65,110,Rock,,,No,No,Dusk
+10153,Araquanid,31,2175,68,70,92,50,132,42,Water,Bug,,No,No,Totem
+10154,Togedemaru,6,130,65,98,63,40,73,96,Electric,Steel,,No,No,Totem
+10155,Necrozma,38,4600,97,157,127,113,109,77,Psychic,Steel,,No,No,Dusk
+10156,Necrozma,42,3500,97,113,109,157,127,77,Psychic,Ghost,,No,No,Dawn
+10157,Necrozma,75,2300,97,167,97,167,97,129,Psychic,Dragon,,No,No,Ultra
+10158,Pikachu,4,60,45,80,50,75,60,120,Electric,,,No,No,Starter
+10159,Eevee,3,65,65,75,70,65,85,75,Normal,,,No,No,Starter
+10160,Pikachu,4,60,35,55,40,50,50,90,Electric,,,No,No,World cap
+10161,Meowth,4,75,50,65,55,40,40,40,Steel,,Galarian,No,No,
+10162,Ponyta,8,240,50,85,55,65,65,90,Psychic,,Galarian,No,No,
+10163,Rapidash,17,800,65,100,70,80,80,105,Psychic,Fairy,Galarian,No,No,
+10164,Slowpoke,12,360,90,65,65,40,40,15,Psychic,,Galarian,No,No,
+10165,Slowbro,16,705,95,100,95,100,70,30,Poison,Psychic,Galarian,No,No,
+10166,Farfetchd,8,420,52,95,55,58,62,55,Fighting,,Galarian,No,No,
+10167,Weezing,30,160,65,90,120,85,70,60,Poison,Fairy,Galarian,No,No,
+10168,Mr-mime,14,568,50,65,65,90,90,100,Ice,Psychic,Galarian,No,No,
+10169,Articuno,17,509,90,85,85,125,100,95,Psychic,Flying,Galarian,No,No,
+10170,Zapdos,16,582,90,125,90,85,90,100,Fighting,Flying,Galarian,No,No,
+10171,Moltres,20,660,90,85,90,100,125,90,Dark,Flying,Galarian,No,No,
+10172,Slowking,18,795,95,65,80,110,110,30,Poison,Psychic,Galarian,No,No,
+10173,Corsola,6,5,60,55,100,65,100,30,Ghost,,Galarian,No,No,
+10174,Zigzagoon,4,175,38,30,41,30,41,60,Dark,Normal,Galarian,No,No,
+10175,Linoone,5,325,78,70,61,50,61,100,Dark,Normal,Galarian,No,No,
+10176,Darumaka,7,400,70,90,45,15,45,50,Ice,,Galarian,No,No,
+10177,Darmanitan,17,1200,105,140,55,30,55,95,Ice,,Galarian,No,No,standard
+10178,Darmanitan,17,1200,105,160,55,30,55,135,Ice,Fire,Galarian,No,No,zen
+10179,Yamask,5,15,38,55,85,30,65,30,Ground,Ghost,Galarian,No,No,
+10180,Stunfisk,7,205,109,81,99,66,84,32,Ground,Steel,Galarian,No,No,
+10181,Zygarde,12,335,54,100,71,61,85,115,Dragon,Ground,,No,No,10
+10182,Cramorant,8,180,70,85,55,85,95,85,Flying,Water,,No,No,Gulping
+10183,Cramorant,8,180,70,85,55,85,95,85,Flying,Water,,No,No,Gorging
+10184,Toxtricity,16,400,75,98,70,114,70,75,Electric,Poison,,No,No,Low key
+10185,Eiscue,14,890,75,80,70,65,50,130,Ice,,,No,No,Noice
+10186,Indeedee,9,280,70,55,65,95,105,85,Psychic,Normal,,No,No,Female
+10187,Morpeko,3,30,58,95,58,70,58,97,Electric,Dark,,No,No,Hangry
+10188,Zacian,28,3550,92,150,115,80,115,148,Fairy,Steel,,No,No,Crowned
+10189,Zamazenta,29,7850,92,120,140,80,140,128,Fighting,Steel,,No,No,Crowned
+10190,Eternatus,1000,0,255,115,250,125,250,130,Poison,Dragon,,No,No,Eternamax
+10191,Urshifu,19,1050,100,130,100,63,60,97,Fighting,Water,,No,No,Rapid strike
+10192,Zarude,18,700,105,120,105,70,95,105,Dark,Grass,,No,No,Dada
+10193,Calyrex,24,8091,100,165,150,85,130,50,Psychic,Ice,,No,No,Ice
+10194,Calyrex,24,536,100,85,80,165,100,150,Psychic,Ghost,,No,No,Shadow
+10195,Gigantamax Venusaur,240,10000,80,82,83,100,100,80,Grass,Poison,,No,Yes,
+10196,Gigantamax Charizard,280,10000,78,84,78,109,85,100,Fire,Flying,,No,Yes,
+10197,Gigantamax Blastoise,250,10000,79,83,100,85,105,78,Water,,,No,Yes,
+10198,Gigantamax Butterfree,170,10000,60,45,50,90,80,70,Bug,Flying,,No,Yes,
+10199,Gigantamax Pikachu,210,10000,35,55,40,50,50,90,Electric,,,No,Yes,
+10200,Gigantamax Meowth,330,10000,40,45,35,40,40,90,Normal,,,No,Yes,
+10201,Gigantamax Machamp,250,10000,90,130,80,65,85,55,Fighting,,,No,Yes,
+10202,Gigantamax Gengar,200,10000,60,65,60,130,75,110,Ghost,Poison,,No,Yes,
+10203,Gigantamax Kingler,190,10000,55,130,115,50,50,75,Water,,,No,Yes,
+10204,Gigantamax Lapras,240,10000,130,85,80,85,95,60,Water,Ice,,No,Yes,
+10205,Gigantamax Eevee,180,10000,55,55,50,45,65,55,Normal,,,No,Yes,
+10206,Gigantamax Snorlax,350,10000,160,110,65,65,110,30,Normal,,,No,Yes,
+10207,Gigantamax Garbodor,210,10000,80,95,82,60,82,75,Poison,,,No,Yes,
+10208,Gigantamax Melmetal,250,10000,135,143,143,80,65,34,Steel,,,No,Yes,
+10209,Gigantamax Rillaboom,280,10000,100,125,90,60,70,85,Grass,,,No,Yes,
+10210,Gigantamax Cinderace,270,10000,80,116,75,65,75,119,Fire,,,No,Yes,
+10211,Gigantamax Inteleon,400,10000,70,85,65,125,65,120,Water,,,No,Yes,
+10212,Gigantamax Corviknight,140,10000,98,87,105,53,85,67,Flying,Steel,,No,Yes,
+10213,Gigantamax Orbeetle,140,10000,60,45,110,80,120,90,Bug,Psychic,,No,Yes,
+10214,Gigantamax Drednaw,240,10000,90,115,90,48,68,74,Water,Rock,,No,Yes,
+10215,Gigantamax Coalossal,420,10000,110,80,120,80,90,30,Rock,Fire,,No,Yes,
+10216,Gigantamax Flapple,240,10000,70,110,80,95,60,70,Grass,Dragon,,No,Yes,
+10217,Gigantamax Appletun,240,10000,110,85,80,100,80,30,Grass,Dragon,,No,Yes,
+10218,Gigantamax Sandaconda,220,10000,72,107,125,65,70,71,Ground,,,No,Yes,
+10219,Gigantamax Toxtricity,240,10000,75,98,70,114,70,75,Electric,Poison,,No,Yes,Amped
+10220,Gigantamax Centiskorch,750,10000,100,115,65,90,90,65,Fire,Bug,,No,Yes,
+10221,Gigantamax Hatterene,260,10000,57,90,95,136,103,29,Psychic,Fairy,,No,Yes,
+10222,Gigantamax Grimmsnarl,320,10000,95,120,65,95,75,60,Dark,Fairy,,No,Yes,
+10223,Gigantamax Alcremie,300,10000,65,60,75,110,121,64,Fairy,,,No,Yes,
+10224,Gigantamax Copperajah,230,10000,122,130,69,80,69,30,Steel,,,No,Yes,
+10225,Gigantamax Duraludon,430,10000,70,95,115,120,50,85,Steel,Dragon,,No,Yes,
+10226,Gigantamax Urshifu,290,10000,100,130,100,63,60,97,Fighting,Dark,,No,Yes,Single strike
+10227,Gigantamax Urshifu,260,10000,100,130,100,63,60,97,Fighting,Water,,No,Yes,Rapid strike
+10228,Gigantamax Toxtricity,240,10000,75,98,70,114,70,75,Electric,Poison,,No,Yes,Low key
+10229,Growlithe,8,227,60,75,45,65,50,55,Fire,Rock,Hisuian,No,No,
+10230,Arcanine,20,1680,95,115,80,95,80,90,Fire,Rock,Hisuian,No,No,
+10231,Voltorb,5,130,40,30,50,55,55,100,Electric,Grass,Hisuian,No,No,
+10232,Electrode,12,710,60,50,70,80,80,150,Electric,Grass,Hisuian,No,No,
+10233,Typhlosion,16,698,73,84,78,119,85,95,Fire,Ghost,Hisuian,No,No,
+10234,Qwilfish,5,39,65,95,85,55,55,85,Dark,Poison,Hisuian,No,No,
+10235,Sneasel,9,270,55,95,55,35,75,115,Fighting,Poison,Hisuian,No,No,
+10236,Samurott,15,582,90,108,80,100,65,85,Water,Dark,Hisuian,No,No,
+10237,Lilligant,12,192,70,105,75,50,75,105,Grass,Fighting,Hisuian,No,No,
+10238,Zorua,7,125,35,60,40,85,40,70,Normal,Ghost,Hisuian,No,No,
+10239,Zoroark,16,730,55,100,60,125,60,110,Normal,Ghost,Hisuian,No,No,
+10240,Braviary,17,434,110,83,70,112,70,65,Psychic,Flying,Hisuian,No,No,
+10241,Sliggoo,7,685,58,75,83,83,113,40,Steel,Dragon,Hisuian,No,No,
+10242,Goodra,17,3341,80,100,100,110,150,60,Steel,Dragon,Hisuian,No,No,
+10243,Avalugg,14,2624,95,127,184,34,36,38,Ice,Rock,Hisuian,No,No,
+10244,Decidueye,16,370,88,112,80,95,95,60,Grass,Fighting,Hisuian,No,No,
+10245,Dialga,70,8487,100,100,120,150,120,90,Steel,Dragon,,No,No,Origin
+10246,Palkia,63,6590,90,100,100,150,120,120,Water,Dragon,,No,No,Origin
+10247,Basculin,10,180,70,92,65,80,55,98,Water,,,No,No,White striped
+10248,Basculegion,30,1100,120,92,65,100,75,78,Water,Ghost,,No,No,Female
+10249,Enamorus,16,480,74,115,110,135,100,46,Fairy,Flying,,No,No,Therian
+10250,Tauros,14,1150,75,110,105,30,70,100,Fighting,,Paldean,No,No,combat Breed
+10251,Tauros,14,850,75,110,105,30,70,100,Fighting,Fire,Paldean,No,No,blaze Breed
+10252,Tauros,14,1100,75,110,105,30,70,100,Fighting,Water,Paldean,No,No,aqua Breed
+10253,Wooper,4,110,55,45,45,25,25,15,Poison,Ground,Paldean,No,No,
+10254,Oinkologne,10,1200,115,90,70,59,90,65,Normal,,,No,No,Female
+10255,Dudunsparce,45,474,125,100,80,85,75,55,Normal,,,No,No,Three segment
+10256,Palafin,18,974,100,160,97,106,87,100,Water,,,No,No,Hero
+10257,Maushold,3,28,74,75,70,65,75,111,Normal,,,No,No,Family of three
+10258,Tatsugiri,3,80,68,50,60,120,95,82,Dragon,Water,,No,No,Droopy
+10259,Tatsugiri,3,80,68,50,60,120,95,82,Dragon,Water,,No,No,Stretchy
+10260,Squawkabilly,6,24,82,96,51,45,51,92,Normal,Flying,,No,No,Blue plumage
+10261,Squawkabilly,6,24,82,96,51,45,51,92,Normal,Flying,,No,No,Yellow plumage
+10262,Squawkabilly,6,24,82,96,51,45,51,92,Normal,Flying,,No,No,White plumage
+10263,Gimmighoul,1,10,45,30,25,75,45,80,Ghost,,,No,No,Roaming
+10264,Koraidon,35,3030,100,135,115,85,100,135,Fighting,Dragon,,No,No,Limited build
+10265,Koraidon,35,3030,100,135,115,85,100,135,Fighting,Dragon,,No,No,Sprinting build
+10266,Koraidon,35,3030,100,135,115,85,100,135,Fighting,Dragon,,No,No,Swimming build
+10267,Koraidon,35,3030,100,135,115,85,100,135,Fighting,Dragon,,No,No,Gliding build
+10268,Miraidon,28,2400,100,85,100,135,115,135,Electric,Dragon,,No,No,Low power mode
+10269,Miraidon,28,2400,100,85,100,135,115,135,Electric,Dragon,,No,No,Drive mode
+10270,Miraidon,28,2400,100,85,100,135,115,135,Electric,Dragon,,No,No,Aquatic mode
+10271,Miraidon,28,2400,100,85,100,135,115,135,Electric,Dragon,,No,No,Glide mode
+10272,Ursaluna,24,2900,113,70,120,135,65,52,Ground,Normal,,No,No,Bloodmoon
+10273,Ogerpon,12,398,80,120,84,60,96,110,Grass,Water,,No,No,Wellspring mask
+10274,Ogerpon,12,398,80,120,84,60,96,110,Grass,Fire,,No,No,Hearthflame mask
+10275,Ogerpon,12,398,80,120,84,60,96,110,Grass,Rock,,No,No,Cornerstone mask
+10276,Terapagos,3,160,95,95,110,105,110,85,Normal,,,No,No,Terastal
+10277,Terapagos,17,770,160,105,110,130,110,85,Normal,,,No,No,Stellar
