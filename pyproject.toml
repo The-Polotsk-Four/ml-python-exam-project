@@ -1,10 +1,11 @@
 [project]
 name = "ml-python-exam-project"
 version = "0.1.0"
-description = "Add your description here"
+description = "Exam project for machine learning and pything electives, with pokemans"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.12"
 dependencies = [
+    "ipython>=9.13.0",
     "ipywidgets>=8.1.8",
     "kagglehub>=1.0.0",
     "matplotlib>=3.10.9",
