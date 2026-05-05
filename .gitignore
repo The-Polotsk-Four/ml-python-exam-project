@@ -1,7 +1,8 @@
 .idea
-idea/workspace.xml
+.idea/workspace.xml
 machine_learning/roboflow_model/Pokemon-1/
 machine_learning/roboflow_model/train/
 machine_learning/roboflow_model/yolo11l.pt
 machine_learning/roboflow_model/yolov8n-cls.pt
 /.venv/
+/machine_learning/roboflow_model/train-2/
