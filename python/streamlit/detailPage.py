@@ -1,88 +1,83 @@
 import streamlit as st
 import pandas as pd
-import requests
-from io import BytesIO
-from PIL import Image
+import os
 
-
-st.set_page_config(
-    page_title='DetailPage',
-    layout='centered'
-)
-
-TYPE_COLORS = {
-    "Fire": "#E25822", "Grass": "#3B8A2A", "Water": "#2980B9",
-    "Electric": "#F0C040", "Psychic": "#C0306A", "Ice": "#6BC4D4",
-    "Dragon": "#5B3EC8", "Dark": "#4A3B30", "Fairy": "#C9699E",
-    "Normal": "#9A9977", "Fighting": "#B83030", "Flying": "#6D90C4",
-    "Poison": "#7B3FA0", "Ground": "#C4A63C", "Rock": "#A09060",
-    "Bug": "#829620", "Ghost": "#5A4070", "Steel": "#9BA0A8",
-}
-
-STAT_COLORS = {
-    'HP': '#E25822',
-    'Attack': '#E24B4A',
-    'Defense': '#378ADD',
-    'Sp. Atk': '#9B59B6',
-    'Sp Def': '#1D9E75',
-    'Speed': '#F0C040',
-}
-
-st.markdown("""
-<style>
-.type-badge {
-    display: inline-block;
-    padding: 4px 14px;
-    border-radius: 20px;
-    font-size: 13px;
-    font-weight: 600;
-    color: white;
-    margin-right: 6px;
-}
-.stat-label {
-    font-size: 13px;
-    color: #888;
-    width: 70px;
-    display: inline-block;
-    text-align: right;
-    margin-right: 8px;
-}
-.stat-value {
-    font-size: 13px;
-    font-weight: 600;
-    width: 30px;
-    display: inline-block;
-    text-align: right;
-    margin-right: 8px;
-}            
-.pokemon-name {
-    font-size: 2rem;
-    font-wight: 700;
-    margin: 0;
-}
-.pokemon-num {
-    font-size: 1rem;
-    color: #aaa;
-}
-.info-label {
-    font-size: 11px;
-    color: #aaa;
-    text-transform: uppercase;
-    letter-spacing: 0.05px;
-}
-.info-value {
-    font-size: 10px;
-    font-weight: 600;
-}
-</style>
-""", unsafe_allow_html=True)
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv('../../machine_learning/resources/pokemon-dataset-get-1-9/versions/10/pokemondataset:updated.csv')
-    df =["Type_2"] = df["Type_2"].fillna("")
+    columns = [
+        "ID", "Name", "Height_m", "Weight_kg",
+        "HP", "Attack", "Defense", "Sp_Atk", "Sp_Def", "Speed",
+        "Type_1", "Type_2",
+        "isLegendary", "isMythical",
+        "EggGroup_1", "EggGroup_2",
+        "Generation", "CatchRate", "BaseFriendship",
+        "isBaby", "EvoStages", "PrevEvolution", "hasGenderDiff",
+        "BaseTotal"
+    ]
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    csv_path = os.path.join(base_dir,
+                            "../../machine_learning/resources/pokemon-dataset-gen-1-9/versions/10/pokemondataset_updated.csv")
+    df = pd.read_csv(csv_path, header=None, names=columns)
+    df["Type_2"] = df["Type_2"].fillna("")
     return df
 
 
+st.set_page_config(
+    page_title="Pokemon Detail",
+    layout="centered"
+)
 
-st.text('detail page')
+df = load_data()
+
+st.title("Pokemon Detail")
+
+pokemon_names = df["Name"].tolist()
+selected_name = st.selectbox("Choose your pokémon", pokemon_names)
+
+pokemon = df[df["Name"] == selected_name].iloc[0]
+
+pokemon_id = int(pokemon["ID"])
+image_url = f"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{pokemon_id}.png"
+
+st.image(image_url, width=150, caption=selected_name)
+
+st.header(pokemon["Name"])
+type_str = pokemon["Type_1"]
+if pokemon["Type_2"]:
+    type_str += f" / {pokemon['Type_2']}"
+st.write(f"**Type:** {type_str}")
+
+st.write(f"**Generation:** {pokemon['Generation']}")
+
+if pokemon["isLegendary"]:
+    st.write("Legendary")
+if pokemon["isMythical"]:
+    st.write("Mythical")
+
+st.divider()
+
+st.subheader("Base Stats")
+
+stats = {
+    "HP": int(pokemon["HP"]),
+    "Attack": int(pokemon["Attack"]),
+    "Defense": int(pokemon["Defense"]),
+    "Sp. Atk": int(pokemon["Sp_Atk"]),
+    "Sp. Def": int(pokemon["Sp_Def"]),
+    "Speed": int(pokemon["Speed"]),
+}
+
+for stat_name, stat_value in stats.items():
+    col1, col2 = st.columns([1, 3])
+    col1.write(f"**{stat_name}**")
+    col2.progress(stat_value / 255, text=str(stat_value))
+
+st.divider()
+
+st.subheader("Info")
+col1, col2 = st.columns(2)
+col1.metric("Height", f"{pokemon['Height_m']} m")
+col2.metric("Weight", f"{pokemon['Weight_kg']} kg")
+col1.metric("Base Total", int(pokemon["BaseTotal"]))
+col2.metric("Catch Rate", int(pokemon["CatchRate"]))
