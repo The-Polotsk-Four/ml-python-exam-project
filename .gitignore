@@ -6,3 +6,4 @@ machine_learning/roboflow_model/yolo11l.pt
 machine_learning/roboflow_model/yolov8n-cls.pt
 /.venv/
 /machine_learning/roboflow_model/train-2/
+.env
