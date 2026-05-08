@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4854e4d4-c136-44c2-8959-8c249b45f7a8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/fastApi/PokeAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/fastApi/PokeAPI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine_learning/roboflow_model/PokemonGenOneModel.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning/roboflow_model/PokemonGenOneModel.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/streamlit/pokedex.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/streamlit/pokedex.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
