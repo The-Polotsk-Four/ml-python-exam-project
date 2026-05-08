@@ -8,14 +8,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 from ClusterFunctions import *
 
-STATS = ['HP', 'Attack', 'Defense', 'Sp.Atk', 'Sp.Def', 'Speed']
-
-CLUSTER_COLORS = [
-    '#e63946', '#2a9d8f', '#f4a261', '#457b9d',
-    '#8ecae6', '#a8dadc', '#606c38', '#e9c46a',
-    '#264653', '#f77f00',
-]
-
 # ── page config ──────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title='Pokemon Cluster',
