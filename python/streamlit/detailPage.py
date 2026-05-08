@@ -1,74 +1,66 @@
 import streamlit as st
-import pandas as pd
-import os
 import requests
 
 
 @st.cache_data
 def load_data():
     columns = [
-        "ID", "Name", "Height_m", "Weight_kg",
-        "HP", "Attack", "Defense", "Sp_Atk", "Sp_Def", "Speed",
-        "Type_1", "Type_2",
-        "isLegendary", "isMythical",
-        "EggGroup_1", "EggGroup_2",
-        "Generation", "CatchRate", "BaseFriendship",
-        "isBaby", "EvoStages", "PrevEvolution", "hasGenderDiff",
-        "BaseTotal"
+        "id", "name", "height", "weight",
+        "hp", "attack", "defense", "special-attack", "special-defense", "speed",
+        "types",
+        #"isLegendary", "isMythical",
+        #"EggGroup_1", "EggGroup_2",
+        "generation",
+        #"CatchRate",
+        #"BaseFriendship",
+        #"isBaby",
+        #"EvoStages",
+        #"PrevEvolution",
+        #"hasGenderDiff",
+        #"BaseTotal"
     ]
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    csv_path = os.path.join(base_dir,
-                            "../../machine_learning/resources/pokemon-dataset-gen-1-9/versions/10/pokemondataset_updated.csv")
-    df = pd.read_csv(csv_path, header=None, names=columns)
-    df["Type_2"] = df["Type_2"].fillna("")
-    return df
-
-
+    #base_dir = os.path.dirname(os.path.abspath(__file__))
+    #csv_path = os.path.join(base_dir,
+     #                       "../../machine_learning/resources/pokemon-dataset-gen-1-9/versions/10/pokemondataset_updated.csv")
+    #df = pd.read_csv(csv_path, header=None, names=columns)
+    #df["Type_2"] = df["Type_2"].fillna("")
+    #return df
 
 st.set_page_config(
     page_title="Pokemon Detail",
     layout="centered"
 )
-
-df = load_data()
-
 st.title("Pokemon Detail")
 
-pokemon_names = df["Name"].tolist()
+res=requests.get(f'http://127.0.0.1:8000/getAllPokemon')
+all_pokemon = res.json()
+
+pokemon_names = [pokemon["name"] for pokemon in all_pokemon]
 selected_name = st.selectbox("Choose your pokémon", pokemon_names)
-res=requests.get(f'http://127.0.0.1:8000/getSpecificPokemon/{selected_name}')
 
-pokemon = df[df["Name"] == selected_name].iloc[0]
+pokemon_basic = next(p for p in all_pokemon if p["name"] == selected_name)
 
-pokemon_id = int(pokemon["ID"])
-image_url = f"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{pokemon_id}.png"
+pokeapi_res = requests.get(f'https://pokeapi.co/api/v2/pokemon/{selected_name}')
+pokemon = pokeapi_res.json()
 
-st.image(image_url, width=150, caption=selected_name)
+st.image(pokemon_basic['sprite'], width=150, caption=selected_name)
 
-st.header(pokemon["Name"])
-type_str = pokemon["Type_1"]
-if pokemon["Type_2"]:
-    type_str += f" / {pokemon['Type_2']}"
-st.write(f"**Type:** {type_str}")
-
-st.write(f"**Generation:** {pokemon['Generation']}")
-
-if pokemon["isLegendary"]:
-    st.write("Legendary")
-if pokemon["isMythical"]:
-    st.write("Mythical")
+st.header(pokemon['name'].capitalize())
+type_str = ' / '.join([t["type"]['name'].capitalize() for t in pokemon["types"]])
+st.write(f'**Type:** {type_str}')
 
 st.divider()
 
 st.subheader("Base Stats")
+stat_map={s['stat']['name']: s['base_stat'] for s in pokemon["stats"]}
 
 stats = {
-    "HP": int(pokemon["HP"]),
-    "Attack": int(pokemon["Attack"]),
-    "Defense": int(pokemon["Defense"]),
-    "Sp. Atk": int(pokemon["Sp_Atk"]),
-    "Sp. Def": int(pokemon["Sp_Def"]),
-    "Speed": int(pokemon["Speed"]),
+    "HP": stat_map.get("hp", 0),
+    "Attack": stat_map.get("attack", 0),
+    "Defense": stat_map.get("defense", 0),
+    "Sp. Atk": stat_map.get("special-attack", 0),
+    "Sp. Def": stat_map.get("special-defense", 0),
+    "Speed": stat_map.get("speed", 0),
 }
 
 for stat_name, stat_value in stats.items():
@@ -80,7 +72,7 @@ st.divider()
 
 st.subheader("Info")
 col1, col2 = st.columns(2)
-col1.metric("Height", f"{pokemon['Height_m']} m")
-col2.metric("Weight", f"{pokemon['Weight_kg']} kg")
-col1.metric("Base Stats", int(pokemon["BaseTotal"]))
-col2.metric("Catch Rate", int(pokemon["CatchRate"]))
+col1.metric("Height", f"{pokemon['height'] / 10} m")
+col2.metric("Weight", f"{pokemon['weight'] / 10} kg")
+base_total = sum(s["base_stat"] for s in pokemon["stats"])
+col1.metric("Base Stat", base_total)
