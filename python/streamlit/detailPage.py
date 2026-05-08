@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
+import requests
 
 
 @st.cache_data
@@ -23,6 +24,7 @@ def load_data():
     return df
 
 
+
 st.set_page_config(
     page_title="Pokemon Detail",
     layout="centered"
@@ -34,6 +36,7 @@ st.title("Pokemon Detail")
 
 pokemon_names = df["Name"].tolist()
 selected_name = st.selectbox("Choose your pokémon", pokemon_names)
+res=requests.get(f'http://127.0.0.1:8000/getSpecificPokemon/{selected_name}')
 
 pokemon = df[df["Name"] == selected_name].iloc[0]
 
@@ -79,5 +82,5 @@ st.subheader("Info")
 col1, col2 = st.columns(2)
 col1.metric("Height", f"{pokemon['Height_m']} m")
 col2.metric("Weight", f"{pokemon['Weight_kg']} kg")
-col1.metric("Base Total", int(pokemon["BaseTotal"]))
+col1.metric("Base Stats", int(pokemon["BaseTotal"]))
 col2.metric("Catch Rate", int(pokemon["CatchRate"]))
