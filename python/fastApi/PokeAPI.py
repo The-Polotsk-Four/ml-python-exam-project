@@ -5,6 +5,9 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 
+# to run, use
+# uvicorn PokeAPI:app --reload
+
 pokemon_cache = []
 
 @asynccontextmanager
