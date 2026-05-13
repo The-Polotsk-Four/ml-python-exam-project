@@ -9,7 +9,7 @@ res_json = res.json()
 
 st.set_page_config(
     page_title='pokerdax',
-    layout='centered'
+    # layout='centered'
 )
 
 # print(res_json[0])
@@ -18,39 +18,59 @@ st.set_page_config(
 st.title('Pokéd-Al')
 st.text('Welcome to the most advanced pokerdax on the web')
 
-def render_pokemon(given_pokemon):
-    pokemon_names.append(given_pokemon['name'])
-    with pokedex.container():
-        with poke_view.container():
-            # st.write(pokemon)
-            st.image(given_pokemon['sprite'])
-            st.write(f'#{given_pokemon['id']:04d}')
-            st.write(given_pokemon['name'])
-            if len(given_pokemon['types']) == 1:
-                st.write(given_pokemon['types'][0])
-            elif len(given_pokemon['types']) == 2:
-                st.write(given_pokemon['types'][0] + '/' + given_pokemon['types'][1])
-            # st.write(len(pokemon['types']))
+# st.page_link('python/streamlit/clustering.py', label='test')
+
+# st.page_link('./pages/detail_page.py',
+#              label='detail',
+#              query_params={'pokemon': 'quagsire'})
 
 search_bar = st.container()
-pokedex = st.empty()
-poke_view = st.empty()
+poke_view = st.container()
 
 for pokemon in res_json:
     if pokemon['id'] <= 1025:
-        render_pokemon(pokemon)
+        pokemon_names.append(pokemon['name'])
+        with poke_view.container(border=True, horizontal_alignment="center"):
+            st.image(pokemon['sprite'])
+            st.page_link('./pages/detail_page.py',
+                         label=f'#{pokemon['id']:04d}',
+                         query_params={'pokemon': pokemon['name']})
+            st.page_link('./pages/detail_page.py',
+                         label=pokemon['name'],
+                         query_params={'pokemon': pokemon['name']})
+            # pokemon_info = (f'#{pokemon['id']:04d}\n'
+            #                 f'{pokemon['name']}\n')
+            if len(pokemon['types']) == 1:
+                st.page_link('./pages/detail_page.py',
+                             label=pokemon['types'][0],
+                             query_params={'pokemon': pokemon['name']})
+                # pokemon_info = pokemon_info + pokemon['types'][0]
+            elif len(pokemon['types']) == 2:
+                st.page_link('./pages/detail_page.py',
+                             label=pokemon['types'][0] + '/' + pokemon['types'][1],
+                             query_params={'pokemon': pokemon['name']})
+                # pokemon_info = pokemon_info + pokemon['types'][0] + '/' + pokemon['types'][1]
+
+            # st.text(pokemon_info)
+
+            # st.page_link(detail_page)
+            # st.page_link('pages/detail_page.py',
+            #              label='test',
+            #              query_params={'pokemon': 'quagsire'})
+            # def pokedex():
+            #     poke_view.page_link('detail_page.py',
+            #                  label='test',
+            #                  query_params={'pokemon': 'quagsire'})
 
 selected_pokemon = search_bar.selectbox('Choose a pokemon', pokemon_names)
 
-if selected_pokemon != 'Show All Pokemon':
-    pokedex.empty()
-    poke_view.empty()
-    for pokemon in res_json:
-        if pokemon['name'] == selected_pokemon:
-            render_pokemon(pokemon)
-if selected_pokemon == 'Show All Pokemon':
-    pokedex.empty()
-    poke_view.empty()
-    for pokemon in res_json:
-        if pokemon['id'] <= 1025:
-            render_pokemon(pokemon)
+# if selected_pokemon != 'Show All Pokemon':
+    # poke_view.empty()
+    # for pokemon in res_json:
+    #     if pokemon['name'] == selected_pokemon:
+    #         render_pokemon(pokemon)
+# if selected_pokemon == 'Show All Pokemon':
+    # poke_view.empty()
+    # for pokemon in res_json:
+    #     if pokemon['id'] <= 1025:
+    #         render_pokemon(pokemon)
