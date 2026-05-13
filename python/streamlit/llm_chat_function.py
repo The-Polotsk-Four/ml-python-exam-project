@@ -2,6 +2,7 @@ import streamlit as st
 from mistralai.client import Mistral
 import os
 from dotenv import load_dotenv
+import requests
 
 load_dotenv()
 
@@ -22,5 +23,10 @@ def mistral_chatting(messages):
         )
         return res.choices[0].message.content
 
-
+def is_valid_mistral_key(api_key):
+    response = requests.get(
+        "https://api.mistral.ai/v1/models",
+        headers={"Authorization": f"Bearer {api_key}"}
+    )
+    return response.status_code == 200
 

@@ -1,5 +1,5 @@
 import streamlit as st
-from llm_chat_function import mistral_chatting
+from llm_chat_function import mistral_chatting, is_valid_mistral_key
 import os
 from dotenv import load_dotenv
 
@@ -10,10 +10,13 @@ if os.getenv('MISTRAL_API_KEY') is None:
     st.link_button('mistral api key page', 'https://admin.mistral.ai/organization/api-keys')
     api_key = st.text_input("Insert your API key for Mistral")
     if api_key:
-        with open(".env", "a") as f:
-            f.write(f"\nMISTRAL_API_KEY={api_key}")
-        os.environ["MISTRAL_API_KEY"] = api_key
-        st.rerun()
+        if is_valid_mistral_key(api_key):
+            with open(".env", "a") as f:
+                f.write(f"\nMISTRAL_API_KEY={api_key}")
+            os.environ["MISTRAL_API_KEY"] = api_key
+            st.rerun()
+        else:
+            st.error("Invalid API key. Please check and try again.")
 else:
     st.title("Speak with the sage of thunder")
 
