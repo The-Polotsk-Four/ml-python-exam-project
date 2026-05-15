@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4854e4d4-c136-44c2-8959-8c249b45f7a8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/python/streamlit/pokéPicRec.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/streamlit/detailPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/streamlit/detailPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine_learning/roboflow_model/PokemonGenOneModel.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning/roboflow_model/PokemonGenOneModel.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,29 +18,30 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="detailPage" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "GusViking"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;GusViking&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/The-Polotsk-Four/ml-python-exam-project.git",
-    "accountId": "07ea218c-4eb8-486a-8167-245831c16085"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/The-Polotsk-Four/ml-python-exam-project.git&quot;,
+    &quot;accountId&quot;: &quot;07ea218c-4eb8-486a-8167-245831c16085&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
@@ -57,7 +59,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "detailPage2",
+    "git-widget-placeholder": "pokepic",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/school/machine learning/ml-python-exam-project",
     "node.js.selected.package.tslint": "(autodetect)",
