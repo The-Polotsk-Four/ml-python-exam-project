@@ -1,5 +1,10 @@
 import streamlit as st
 import requests
+import os
+import dotenv
+
+dotenv.load_dotenv()
+
 
 
 # @st.cache_data
@@ -36,7 +41,9 @@ st.page_link('pokedex.py', label='home')
 
 selected_name = st.query_params['pokemon']
 
-res=requests.get(f'http://127.0.0.1:8000/getAllPokemon')
+local_host = os.getenv("FAST_API_URL", "http://127.0.0.1:8000")
+
+res=requests.get(f'{local_host}/getAllPokemon')
 all_pokemon = res.json()
 
 pokemon_names = [pokemon["name"] for pokemon in all_pokemon]

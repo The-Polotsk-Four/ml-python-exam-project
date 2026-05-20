@@ -1,7 +1,13 @@
 import requests
 import streamlit as st
+import os
+import dotenv
 
-local_host = 'http://127.0.0.1:8000'
+dotenv.load_dotenv()
+
+local_host = os.getenv("FAST_API_URL", "http://127.0.0.1:8000")
+
+# local_host = 'http://127.0.0.1:8000'
 pokemon_names = ['Show All Pokemon']
 
 res = requests.get(local_host + '/getAllPokemon')
