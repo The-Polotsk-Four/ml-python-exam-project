@@ -1,5 +1,5 @@
 import streamlit as st
-from llm_chat_function import mistral_chatting, is_valid_mistral_key
+from functions.llm_chat_function import mistral_chatting, is_valid_mistral_key
 import os
 from dotenv import load_dotenv
 
