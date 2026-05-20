@@ -2,7 +2,7 @@ from ultralytics import YOLO
 
 
 def predict_pokemon(pokemon_image):
-    model = YOLO(r'machine_learning\roboflow_model\trained_yolo26_model\weights\best.pt')
+    model = YOLO(r'machine_learning/roboflow_model/trained_yolo26_model/weights/best.pt')
 
     prediction = model.predict(
         source=pokemon_image,
