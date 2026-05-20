@@ -12,3 +12,7 @@ if image is not None:
 
     annotated_rgb = cv2.cvtColor(annotated_bgr, cv2.COLOR_BGR2RGB)
     st.image(annotated_rgb, caption=f'Predicted: {pokemon_name} ({confidence:.2%})')
+
+    st.page_link('./pages/detail_page.py',
+                 label=f'Go to detail page of {pokemon_name}',
+                 query_params={'pokemon': pokemon_name.lower()})
