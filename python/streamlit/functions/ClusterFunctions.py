@@ -18,7 +18,7 @@ CLUSTER_COLORS = [
 ]
 
 # path to our csv file
-DATA_PATH = '../../machine_learning/resources/pokemon-dataset-gen-1-9/versions/10/pokemondataset_updated.csv'
+DATA_PATH = 'machine_learning/resources/pokemon-dataset-gen-1-9/versions/10/pokemondataset_updated.csv'
 
 
 # loads the pokemon dataset

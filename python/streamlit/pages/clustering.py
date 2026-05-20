@@ -6,7 +6,7 @@ import plotly.graph_objects as go
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
-from ClusterFunctions import *
+from functions.ClusterFunctions import *
 
 # ── page config ──────────────────────────────────────────────────────────────
 st.set_page_config(
