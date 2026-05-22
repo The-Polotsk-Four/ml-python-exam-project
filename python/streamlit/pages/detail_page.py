@@ -5,37 +5,13 @@ import dotenv
 
 dotenv.load_dotenv()
 
-
-
-# @st.cache_data
-# def load_data():
-#     columns = [
-#         "id", "name", "height", "weight",
-#         "hp", "attack", "defense", "special-attack", "special-defense", "speed",
-#         "types",
-#         #"isLegendary", "isMythical",
-#         #"EggGroup_1", "EggGroup_2",
-#         "generation",
-#         #"CatchRate",
-#         #"BaseFriendship",
-#         #"isBaby",
-#         #"EvoStages",
-#         #"PrevEvolution",
-#         #"hasGenderDiff",
-#         #"BaseTotal"
-#     ]
-#     #base_dir = os.path.dirname(os.path.abspath(__file__))
-#     #csv_path = os.path.join(base_dir,
-#      #                       "../../machine_learning/resources/pokemon-dataset-gen-1-9/versions/10/pokemondataset_updated.csv")
-#     #df = pd.read_csv(csv_path, header=None, names=columns)
-#     #df["Type_2"] = df["Type_2"].fillna("")
-#     #return df
-
-# st.set_page_config(
-#     page_title="Pokemon Detail",
-#     layout="centered"
-# )
 st.title("Pokemon Detail")
+
+# Sidebar navigation
+st.sidebar.page_link('pokedex.py', label='Home')
+st.sidebar.page_link('pages/clustering.py', label='Clustering')
+st.sidebar.page_link('pages/mistral_streamlit_chat.py', label='Chat with Pikachu')
+st.sidebar.page_link('pages/pokemon_recogniser.py', label='Pokémon recogniser')
 
 st.page_link('pokedex.py', label='home')
 
@@ -47,7 +23,6 @@ res=requests.get(f'{local_host}/getAllPokemon')
 all_pokemon = res.json()
 
 pokemon_names = [pokemon["name"] for pokemon in all_pokemon]
-# selected_name = st.selectbox("Choose your pokémon", pokemon_names)
 
 pokemon_basic = next(p for p in all_pokemon if p["name"] == selected_name)
 

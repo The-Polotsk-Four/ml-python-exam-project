@@ -5,6 +5,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# Sidebar navigation
+st.sidebar.page_link('pokedex.py', label='Home')
+st.sidebar.page_link('pages/clustering.py', label='Clustering')
+st.sidebar.page_link('pages/mistral_streamlit_chat.py', label='Chat with pikachu')
+st.sidebar.page_link('pages/pokemon_recogniser.py', label='Pokemon recogniser')
+
 if os.getenv('MISTRAL_API_KEY') is None:
     st.text('This page needs you to have a valid api key for mistral, you can create or find your mistral api keys from: ')
     st.link_button('mistral api key page', 'https://admin.mistral.ai/organization/api-keys')

@@ -1,11 +1,3 @@
-import numpy as np
-import pandas as pd
-import streamlit as st
-import plotly.express as px
-import plotly.graph_objects as go
-from sklearn.cluster import KMeans
-from sklearn.preprocessing import StandardScaler
-from sklearn.decomposition import PCA
 from functions.ClusterFunctions import *
 
 # ── page config ──────────────────────────────────────────────────────────────
@@ -15,6 +7,13 @@ st.set_page_config(
 )
 
 # ── sidebar ───────────────────────────────────────────────────────────────────
+
+# Sidebar navigation
+st.sidebar.page_link('pokedex.py', label='Home')
+st.sidebar.page_link('pages/clustering.py', label='Clustering')
+st.sidebar.page_link('pages/mistral_streamlit_chat.py', label='Chat with Pikachu')
+st.sidebar.page_link('pages/pokemon_recogniser.py', label='Pokémon recogniser')
+
 with st.sidebar:
     st.markdown("## Pokemon\nCluster Lab")
     st.divider()

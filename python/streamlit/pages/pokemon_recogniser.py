@@ -6,6 +6,12 @@ from PIL import Image
 image_types = ['jpeg', 'png', 'webd']
 image = st.file_uploader('Upload an image of a pokemon from generation 1', type= image_types)
 
+# Sidebar navigation
+st.sidebar.page_link('pokedex.py', label='Home')
+st.sidebar.page_link('pages/clustering.py', label='Clustering')
+st.sidebar.page_link('pages/mistral_streamlit_chat.py', label='Chat with Pikachu')
+st.sidebar.page_link('pages/pokemon_recogniser.py', label='Pokémon recogniser')
+
 if image is not None:
     pil_image = Image.open(image)
     pokemon_name, confidence, annotated_bgr = pp(pil_image)
