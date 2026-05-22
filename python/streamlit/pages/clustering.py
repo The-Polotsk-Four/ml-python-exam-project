@@ -14,46 +14,6 @@ st.set_page_config(
     layout='wide',
 )
 
-# ── custom CSS ───────────────────────────────────────────────────────────────
-st.markdown("""
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap');
-
-  html, body, [class*="css"] {
-    font-family: 'DM Sans', sans-serif;
-  }
-  h1, h2, h3 {
-    font-family: 'Space Mono', monospace !important;
-  }
-  .block-container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-  .metric-card {
-    background: #1a1a2e;
-    border: 1px solid #2d2d4e;
-    border-radius: 8px;
-    padding: 1rem 1.25rem;
-  }
-  .stDataFrame {
-    border: 1px solid #2d2d4e;
-    border-radius: 8px;
-  }
-  section[data-testid="stSidebar"] {
-    background: #0f0f1a;
-    border-right: 1px solid #2d2d4e;
-  }
-  .stSelectbox label, .stSlider label, .stFileUploader label {
-    font-family: 'Space Mono', monospace;
-    font-size: 0.78rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: #a0a0c0;
-  }
-</style>
-""", unsafe_allow_html=True)
-
-
 # ── sidebar ───────────────────────────────────────────────────────────────────
 with st.sidebar:
     st.markdown("## Pokemon\nCluster Lab")
