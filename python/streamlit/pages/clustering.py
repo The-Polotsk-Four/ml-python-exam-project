@@ -1,11 +1,3 @@
-import numpy as np
-import pandas as pd
-import streamlit as st
-import plotly.express as px
-import plotly.graph_objects as go
-from sklearn.cluster import KMeans
-from sklearn.preprocessing import StandardScaler
-from sklearn.decomposition import PCA
 from functions.ClusterFunctions import *
 
 # ── page config ──────────────────────────────────────────────────────────────

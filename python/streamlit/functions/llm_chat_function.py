@@ -1,4 +1,3 @@
-import streamlit as st
 from mistralai.client import Mistral
 import os
 from dotenv import load_dotenv

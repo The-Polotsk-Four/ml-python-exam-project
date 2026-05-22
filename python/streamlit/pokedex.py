@@ -7,7 +7,6 @@ dotenv.load_dotenv()
 
 local_host = os.getenv("FAST_API_URL", "http://127.0.0.1:8000")
 
-# local_host = 'http://127.0.0.1:8000'
 pokemon_names = ['Show All Pokemon']
 
 res = requests.get(local_host + '/getAllPokemon')
@@ -23,8 +22,6 @@ st.text('Welcome to the most advanced pokerdax on the web')
 search_bar = st.container()
 poke_view = st.container()
 
-# st.page_link('./pages/clustering.py')
-
 for pokemon in res_json:
     if pokemon['id'] <= 1025:
         pokemon_names.append(pokemon['name'])
@@ -36,13 +33,10 @@ for pokemon in res_json:
             st.page_link('./pages/detail_page.py',
                          label=pokemon['name'],
                          query_params={'pokemon': pokemon['name']})
-            # pokemon_info = (f'#{pokemon['id']:04d}\n'
-            #                 f'{pokemon['name']}\n')
             if len(pokemon['types']) == 1:
                 st.page_link('./pages/detail_page.py',
                              label=pokemon['types'][0],
                              query_params={'pokemon': pokemon['name']})
-                # pokemon_info = pokemon_info + pokemon['types'][0]
             elif len(pokemon['types']) == 2:
                 st.page_link('./pages/detail_page.py',
                              label=pokemon['types'][0] + '/' + pokemon['types'][1],
