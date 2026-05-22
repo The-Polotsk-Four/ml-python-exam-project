@@ -26,3 +26,11 @@ streamlit run ./python/streamlit/pokedex.py
 ```
 
 ## Usage
+### Pokedex
+On the pokedex page you can choose a Pokémon from the dropdown menu, or click on any of the text of the Pokémon to go to a more detailed page with a handful of stats about it.
+
+### Clustering
+
+### Chat with Pikachu
+
+### Recognise Pokémon

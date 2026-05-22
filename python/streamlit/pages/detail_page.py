@@ -7,6 +7,12 @@ dotenv.load_dotenv()
 
 st.title("Pokemon Detail")
 
+# Sidebar navigation
+st.sidebar.page_link('pokedex.py', label='Home')
+st.sidebar.page_link('pages/clustering.py', label='Clustering')
+st.sidebar.page_link('pages/mistral_streamlit_chat.py', label='Chat with Pikachu')
+st.sidebar.page_link('pages/pokemon_recogniser.py', label='Pokémon recogniser')
+
 st.page_link('pokedex.py', label='home')
 
 selected_name = st.query_params['pokemon']

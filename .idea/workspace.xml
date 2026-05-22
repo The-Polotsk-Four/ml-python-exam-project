@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4854e4d4-c136-44c2-8959-8c249b45f7a8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/python/streamlit/.streamlit/config.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/streamlit/functions/ClusterFunctions.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/streamlit/functions/ClusterFunctions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python/streamlit/functions/llm_chat_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/streamlit/functions/llm_chat_function.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/streamlit/pages/clustering.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/streamlit/pages/clustering.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/streamlit/pages/detail_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/streamlit/pages/detail_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/streamlit/pages/mistral_streamlit_chat.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/streamlit/pages/mistral_streamlit_chat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python/streamlit/pages/pokemon_recogniser.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/streamlit/pages/pokemon_recogniser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python/streamlit/pokedex.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/streamlit/pokedex.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
