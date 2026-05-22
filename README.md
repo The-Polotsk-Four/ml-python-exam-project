@@ -30,11 +30,13 @@ streamlit run ./python/streamlit/pokedex.py
 On the pokedex page you can choose a Pokémon from the dropdown menu, or click on any of the text of the Pokémon to go to a more detailed page with a handful of stats about it.
 
 ### Clustering
+View interesting clustering info about specific stats.
 
 ### Chat with Pikachu
+Chat with Pikachu using mistral API
 
 ### Recognise Pokémon
-
+Upload an image of a Pokémon from generation 1, and our AI will tell you what Pokémon it is
 
 
 # Machine Learning
