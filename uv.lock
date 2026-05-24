@@ -1040,6 +1040,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "asyncio-contextmanager" },
     { name = "fastapi" },
+    { name = "httpx" },
     { name = "ipython" },
     { name = "ipywidgets" },
     { name = "kagglehub" },
@@ -1062,6 +1063,7 @@ dependencies = [
 requires-dist = [
     { name = "asyncio-contextmanager", specifier = ">=1.0.1" },
     { name = "fastapi", specifier = ">=0.136.1" },
+    { name = "httpx", specifier = ">=0.28.1" },
     { name = "ipython", specifier = ">=9.13.0" },
     { name = "ipywidgets", specifier = ">=8.1.8" },
     { name = "kagglehub", specifier = ">=1.0.0" },
