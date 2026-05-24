@@ -11,3 +11,4 @@ machine_learning/roboflow_model/yolov8n-cls.pt
 python\streamlit\functions\__pycache__
 python\streamlit\__pycache__
 python\fastApi\__pycache__
+python\tests\__pycache__
