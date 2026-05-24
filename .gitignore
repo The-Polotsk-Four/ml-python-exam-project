@@ -8,3 +8,6 @@ machine_learning/roboflow_model/yolov8n-cls.pt
 /.venv/
 /machine_learning/roboflow_model/train-2/
 .env
+python\streamlit\functions\__pycache__
+python\streamlit\__pycache__
+python\fastApi\__pycache__
