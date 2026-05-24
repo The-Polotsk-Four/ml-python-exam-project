@@ -3,9 +3,16 @@ This pokedex is made for the EK python and machine learning exams summer 2026
 
 Made by: [Gustav](https://github.com/GusViking), [Sofus](https://github.com/SofusVingaard) and [Tobias](https://github.com/itsHarning)
 
+jump to:
+
+[Installation](#installation)
+
+[Usage](#usage)
+
+[Machine Learning](#machine-learning)
+
 ## Installation
 If you have docker installed, you can run `docker compose up --build` in the root of the project to run everything
-
 
 If not, to install requirements you can use
 
