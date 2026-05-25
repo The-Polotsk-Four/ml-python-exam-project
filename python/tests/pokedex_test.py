@@ -15,7 +15,9 @@ spec.loader.exec_module(module)
 
 predict_pokemon = module.predict_pokemon
 
-TEST_IMAGE = "/Users/gustavwilquin/Desktop/KEA Filer/4. Semester/Eksamen/ml-python-exam-project/machine_learning/roboflow_model/Pokemon-1/test/Eevee/00d762c891aa45b38173ce8bf9e74a4d_jpg.rf.69fc4a87cd57deabe307ea6f6d8b606b.jpg"
+# TEST_IMAGE = "/machine_learning/roboflow_model/Pokemon-1/test/Eevee/00d762c891aa45b38173ce8bf9e74a4d_jpg.rf.69fc4a87cd57deabe307ea6f6d8b606b.jpg"
+TEST_IMAGE = r'python\tests\test_eevee.jpg'
+
 # Ruten til billedet som vi bruger i vores test
 
 def test_pokemon_name_is_string():
